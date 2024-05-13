@@ -1,0 +1,59 @@
+.task {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 2px;
+}
+
+.task span {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.deleteBtn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333;
+}
+
+.editBtn {
+  padding: 5px 10px;
+  background-color: rgb(39, 39, 223);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background-color: rgb(6, 6, 148);
+}
+.favoriteBtn {
+  padding: 5px 10px;
+  color: rgb(238, 205, 205);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.favoriteBtn:hover {
+  background-color: rgba(255, 215, 0, 0.3);
+}
+
+.favoriteBtn.active {
+  background-color: rgb(227, 206, 89);
+}

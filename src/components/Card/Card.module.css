@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+   justify-content: center;
+}
+
+
+.span {
+    width: 300px;
+    display: flex;
+      justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+
+
+.button {
+        padding: 5px 10px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+       button:hover {
+        background-color: #c82333;
+      }
+      
