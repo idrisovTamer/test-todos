@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './EditTaskModal.module.css';
 
-const EditTaskModal = ({ closeEditModal, todo, updateTask }) => {
+const EditTaskModal = React.memo(({ closeEditModal, todo, updateTask }) => {
   const [newTitle, setNewTitle] = useState(todo.title);
 
   const todoText = (e) => setNewTitle(e.target.value);
@@ -35,6 +35,6 @@ const EditTaskModal = ({ closeEditModal, todo, updateTask }) => {
       </div>
     </div>
   );
-};
+})
 
 export default EditTaskModal;
