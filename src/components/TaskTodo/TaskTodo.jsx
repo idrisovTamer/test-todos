@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styles from './TaskTodo.module.css';
 import EditTaskModal from '../EditTaskModal/EditTaskModal';
-const TaskTodo = ({ todo, removeTodo, handleSaveTask }) => {
+const TaskTodo = React.memo(({ todo, removeTodo, handleSaveTask }) => {
   const [isChecked, setIsChecked] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
@@ -19,7 +19,7 @@ const TaskTodo = ({ todo, removeTodo, handleSaveTask }) => {
     handleSaveTask(updatedTask);
     closeEditModal();
   };
-
+  
   return (
     <div className={styles.task}>
       <button
@@ -52,6 +52,6 @@ const TaskTodo = ({ todo, removeTodo, handleSaveTask }) => {
       )}
     </div>
   );
-};
+});
 
 export default TaskTodo;
